@@ -1,0 +1,16 @@
+name: Andrew Learns Workflows
+
+# this enables manual triggering of the workflow
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    # define the environment on which this job will run
+    runs-on: ubuntu-latest
+    # now, set out the specific steps of this job
+    steps:
+      - name: Print greeting
+        run: echo "Hello, everybody!" 
+      - name: Print goodbye
+        run: echo "That's all, folks!"
+    
